@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Simulator</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="dist/bundle.js" defer></script>
+</head>
+
+<body>
+    <h1>Weather Simulator</h1>
+    <section id="configSection">
+        <h2>Initial config</h2>
+        <label for="gridWidth">Grid width</label>
+        <input type="range" min="0" max="500" value="50" step="50" id="gridWidthInput">
+        <p id="gridWidthValue">50</p>
+        <br>
+        <label for="gridHeight">Grid height</label>
+        <input type="range" min="0" max="500" value="50" step="50" id="gridHeightInput">
+        <p id="gridHeightValue">50</p>
+        <button id="startBtn">Start</button>
+    </section>
+    <canvas id="canvas"></canvas>
+</body>
+
+</html>
