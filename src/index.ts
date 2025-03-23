@@ -61,6 +61,7 @@ function setupSimulation() {
     setupShaders();
     compileShaders();
     setupQuadBuffer();
+    setupElementProgram();
     console.log("Simulation initialized with success");
 }
 
@@ -86,6 +87,13 @@ function compileShaders() {
     gl.compileShader(elementVertexShader);
     gl.compileShader(elementFragmentShader);
     console.log("Shaders compiled with success");
+}
+
+function setupElementProgram() {
+    let elementProgram = gl.createProgram()!;
+    gl.attachShader(elementProgram, elementVertexShader);
+    gl.attachShader(elementProgram, elementFragmentShader);
+    gl.linkProgram(elementProgram);
 }
 
 
