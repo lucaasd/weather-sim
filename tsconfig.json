@@ -10,6 +10,11 @@
         "rootDir": "src",
         "allowSyntheticDefaultImports": true,
         "noEmit": false,
+        "lib": [
+            "ESNext",
+            "DOM",
+            "ESNext.Promise"
+        ]
     },
     "include": [
         "src"

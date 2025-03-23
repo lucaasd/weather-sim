@@ -27,7 +27,7 @@ class Vector2 {
     }
 
     static random(): Vector2 {
-        return new Vector2(Math.random() * 2 - 1, Math.random() * 2 - 1);
+        return new Vector2(Math.random() * 2 - 1, Math.random() * 2 - 1); // Between -1 and 1
     }
 }
 

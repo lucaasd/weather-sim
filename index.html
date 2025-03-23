@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <h1>Weather Simulator</h1>
     <section id="configSection">
+        <h1>Weather Simulator</h1>
         <h2>Initial config</h2>
         <label for="gridWidth">Grid width</label>
         <input type="range" min="0" max="500" value="50" step="50" id="gridWidthInput">
@@ -22,7 +22,11 @@
         <p id="gridHeightValue">50</p>
         <button id="startBtn">Start</button>
     </section>
-    <canvas id="canvas"></canvas>
+    <section id="gridSection">
+        <button id="stopBtn">Stop</button>
+        <canvas id="canvas">
+        </canvas>
+    </section>
 </body>
 
 </html>
