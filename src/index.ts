@@ -88,6 +88,13 @@ function compileShaders() {
     console.log("Shaders compiled with success");
 }
 
+function setupElementProgram() {
+    let elementProgram = gl.createProgram()!;
+    gl.attachShader(elementProgram, elementVertexShader);
+    gl.attachShader(elementProgram, elementFragmentShader);
+    gl.linkProgram(elementProgram);
+}
+
 
 function setupQuadBuffer() {
     quadBuffer = gl.createBuffer();
